@@ -1,0 +1,22 @@
+// Random Forest Classifier Process
+digraph {
+	A [label=Start]
+	B [label="Select Features and Target"]
+	C [label="Handle Missing Values"]
+	D [label="Convert Categorical Target to Numeric"]
+	E [label="Split Data"]
+	F [label="Train Random Forest Classifier"]
+	G [label="Make Predictions"]
+	H [label="Evaluate Model"]
+	I [label="Feature Importance Plot"]
+	J [label="Confusion Matrix"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	H -> J
+}
